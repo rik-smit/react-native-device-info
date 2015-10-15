@@ -31,5 +31,14 @@ module.exports = {
   },
   getReadableVersion: function() {
     return RNDeviceInfo.appVersion + "." + RNDeviceInfo.buildNumber;
+  },
+  getUtcOffset: function() {
+    return RNDeviceInfo.utcOffset;
+  },
+  getDstOffset: function() {
+    return RNDeviceInfo.dstOffset;
+  },
+  getLocale: function() {
+    return RNDeviceInfo.locale;
   }
 };
